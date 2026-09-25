@@ -1,0 +1,26 @@
+{
+  "name": "pcf-mcp-server",
+  "version": "1.0.0",
+  "description": "Servidor MCP para Prompt Custom Fields (WordPress). Backends: REST (Application Password) o WP-CLI.",
+  "type": "module",
+  "main": "dist/pcf-mcp-server.mjs",
+  "bin": {
+    "pcf-mcp-server": "dist/pcf-mcp-server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "check": "node dist/pcf-mcp-server.mjs --check",
+    "build": "esbuild index.js --bundle --platform=node --target=node18 --format=esm --outfile=dist/pcf-mcp-server.mjs --banner:js=\"import { createRequire as __cr } from 'module'; const require = __cr(import.meta.url);\"",
+    "test": "node test-client.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  },
+  "license": "GPL-2.0-or-later"
+}

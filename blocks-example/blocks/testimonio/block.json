@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pcf/testimonio",
+	"title": "Testimonio",
+	"category": "theme",
+	"icon": "format-quote",
+	"description": "Cita con autor, cargo y foto. Ejemplo de bloque de Prompt Custom Fields.",
+	"keywords": [ "cita", "reseña", "testimonial" ],
+	"supports": { "align": [ "wide", "full" ], "anchor": true, "color": { "background": true, "text": true } },
+	"style": "file:./style.css",
+	"pcf": { "mode": "preview", "renderTemplate": "render.php" }
+}

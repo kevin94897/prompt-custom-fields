@@ -1,0 +1,6 @@
+.pcf-testimonio { margin: 2rem 0; padding: 2rem; border-left: 4px solid currentColor; }
+.pcf-testimonio__nota { margin: 0 0 .5rem; letter-spacing: .1em; }
+.pcf-testimonio__cita { margin: 0; font-size: 1.25em; line-height: 1.5; border: 0; padding: 0; }
+.pcf-testimonio__autor { display: flex; align-items: center; gap: .75rem; margin-top: 1.25rem; }
+.pcf-testimonio__foto { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+.pcf-testimonio__autor small { display: block; opacity: .75; }

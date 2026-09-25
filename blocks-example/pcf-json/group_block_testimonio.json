@@ -1,0 +1,14 @@
+{
+	"key": "group_block_testimonio",
+	"title": "Bloque: Testimonio",
+	"fields": [
+		{ "key": "field_testimonio_cita", "label": "Cita", "name": "cita", "type": "textarea", "required": 1, "rows": 4 },
+		{ "key": "field_testimonio_autor", "label": "Autor", "name": "autor", "type": "text", "required": 1, "wrapper": { "width": "50" } },
+		{ "key": "field_testimonio_cargo", "label": "Cargo", "name": "cargo", "type": "text", "wrapper": { "width": "50" } },
+		{ "key": "field_testimonio_foto", "label": "Foto", "name": "foto", "type": "image", "return_format": "id", "preview_size": "thumbnail" },
+		{ "key": "field_testimonio_valoracion", "label": "Valoración", "name": "valoracion", "type": "range", "min": 0, "max": 5, "step": 1, "default_value": 5 }
+	],
+	"location": [ [ { "param": "block", "operator": "==", "value": "pcf/testimonio" } ] ],
+	"active": true,
+	"modified": 1
+}

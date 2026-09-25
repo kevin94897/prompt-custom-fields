@@ -1,0 +1,43 @@
+/* Prompt Custom Fields — administración. Estilo nativo de WordPress. */
+.pcf-admin .pcf-table td { vertical-align: top; }
+.pcf-admin .pcf-table code { font-size: 12px; }
+.pcf-admin .pcf-loc { max-width: 22rem; color: #50575e; }
+.pcf-admin .pcf-inactive .row-title { color: #787c82; }
+.pcf-status { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; background: #f0f0f1; color: #50575e; white-space: nowrap; }
+.pcf-status-synced { background: #edfaef; color: #00692b; }
+.pcf-status-sync, .pcf-status-new { background: #fcf9e8; color: #8a6100; }
+
+.pcf-empty { margin: 24px 0; padding: 32px; background: #fff; border: 1px solid #c3c4c7; max-width: 46rem; }
+.pcf-empty h2 { margin-top: 0; }
+
+.pcf-card { background: #fff; border: 1px solid #c3c4c7; padding: 4px 16px 16px; margin: 0 0 16px; }
+.pcf-card h2 { font-size: 14px; margin: 12px 0 8px; }
+.pcf-card h3 { font-size: 13px; margin: 16px 0 6px; }
+
+.pcf-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); gap: 16px; margin-top: 16px; align-items: start; }
+.pcf-grid .pcf-card { margin: 0; }
+.pcf-checklist { max-height: 14rem; overflow: auto; border: 1px solid #dcdcde; padding: 8px; }
+
+.pcf-editor-layout { display: grid; grid-template-columns: minmax(0, 1fr) 22rem; gap: 16px; align-items: start; }
+@media (max-width: 1100px) { .pcf-editor-layout { grid-template-columns: 1fr; } }
+.pcf-json { width: 100%; font-family: Consolas, Monaco, monospace; font-size: 13px; line-height: 1.5; }
+.pcf-editor-main .CodeMirror { height: 70vh; border: 1px solid #c3c4c7; }
+.pcf-editor-actions { display: flex; gap: 12px; align-items: center; }
+
+.pcf-tree, .pcf-tree .pcf-tree { margin: 4px 0 4px 0; }
+.pcf-tree .pcf-tree { margin-left: 14px; padding-left: 10px; border-left: 1px solid #dcdcde; }
+.pcf-tree li { margin: 3px 0; }
+.pcf-tree-type { display: inline-block; min-width: 5.5em; font-size: 11px; color: #646970; }
+.pcf-types code { display: inline-block; margin: 0 2px 4px 0; }
+
+.pcf-code { background: #f6f7f7; border: 1px solid #dcdcde; padding: 10px 12px; overflow: auto; max-height: 22rem; font-size: 12px; line-height: 1.5; white-space: pre; margin: 0 0 8px; }
+.pcf-copy.is-copied { color: #00692b; border-color: #00692b; }
+
+.pcf-status-table { max-width: 52rem; margin: 16px 0; }
+.pcf-status-table th { width: 16rem; }
+.pcf-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.pcf-dot.is-ok { background: #00a32a; }
+.pcf-dot.is-warn { background: #dba617; }
+.pcf-modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); gap: 16px; margin: 16px 0 24px; }
+.pcf-modes .pcf-card { margin: 0; }
+.pcf-flag { font-size: 11px; color: #646970; }
