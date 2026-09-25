@@ -33,7 +33,7 @@ function pcf_register_core_operations() {
 		'get-usage-guide',
 		array(
 			'label'       => 'Guía de uso para agentes',
-			'description' => 'Guía en markdown: formato de campos (igual que ACF), ubicaciones, formato de valores por tipo, API de plantillas, bloques e importación de ACF.',
+			'description' => 'Guía en markdown: formato de campos (igual que ACF), ubicaciones, formato de valores por tipo, API de plantillas, bloques e importación de ACF. Incluye las convenciones de NERD (una pestaña por sección, qué poner en cada ayuda, medidas y peso de las imágenes): léela y síguela antes de crear o editar campos.',
 			'callback'    => 'pcf_op_get_usage_guide',
 			'readonly'    => true,
 			'idempotent'  => true,

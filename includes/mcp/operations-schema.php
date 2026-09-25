@@ -239,6 +239,14 @@ Opciones: `get_field('logo', 'option')`. Términos: `get_field('color', $term)` 
 ## Importar ACF
 `detect-acf` → `import-acf` con `dry_run: true` → `import-acf`. Se conservan las keys, así el contenido existente sigue funcionando.
 MD;
+
+	// Las convenciones de la casa (cómo nombrar pestañas, qué poner en cada
+	// ayuda) viven en un markdown aparte para poder editarlas sin tocar PHP.
+	$convenciones = PCF_PATH . 'docs/convenciones.md';
+	if ( is_readable( $convenciones ) ) {
+		$guide .= "\n\n---\n\n" . file_get_contents( $convenciones );
+	}
+
 	return array( 'guide' => $guide );
 }
 
